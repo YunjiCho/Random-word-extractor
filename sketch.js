@@ -53,7 +53,8 @@ function preload() {
 function setup() {
   // frameRate(30);
   canvas = createCanvas(960, 960);
-  canvas.position(500 - 50, 200);
+  canvas.position(350, 200);
+
   for (let i = 0; i < 400; i++) {
     circles[i] = new Circle(
       random(width / 2 - circlewidth / 2, width / 2 + circlewidth / 2),
@@ -82,25 +83,25 @@ function draw() {
     }
     circles[i].move();
   }
-  image(img, 130, -50, 700, 700);
+  image(img, 130, -50+200, 700, 700);
   //가림막..
   fill(255);
   stroke(0);
   //noStroke();
-  rect(480, 800, 700, 400);
+  rect(480, 800+200, 700, 400);
   //제목
   strokeWeight(0);
   stroke(0);
   fill(0);
   textSize(20);
-  text(
+ text(
     "국립국어연구원의 자주 쓰이는 한국어 낱말 5800을 바탕으로 만들어진",
-    320,
+    320+20,
     66
   );
   textSize(40);
   strokeWeight(2);
-  text("랜덤 단어 추출기", 740, 60);
+  titles1 = text("랜덤 단어 추출기", 740+20, 60);
 
   //원의 선
   noFill();
@@ -236,7 +237,7 @@ class Circle {
     }
 
     this.y += this.ySpeed;
-    if (this.y < 100 || this.y > 500) {
+    if (this.y < 100+200 || this.y > 500+200) {
       this.ySpeed *= -1;
     }
     // strokeWeight(1);
