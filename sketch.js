@@ -109,6 +109,18 @@ function draw() {
   //stroke(20);
   noStroke();
   ellipse(width / 2, height / 2, circlewidth, circlewidth);
+    //1,3,5 버튼
+  stroke(255);
+  fill(nc);
+  ellipse(t1, ty - 2, 60, 60);
+  ellipse(t3, ty - 2, 60, 60);
+  ellipse(t5, ty - 2, 60, 60);
+  //1,3,5 글씨
+  fill(255);
+  textSize(txtSize);
+  text("1", t1, ty);
+  text("3", t3, ty);
+  text("5", t5, ty);
   //단어의 공
   strokeWeight(1);
 
@@ -132,18 +144,7 @@ function draw() {
   text(values[wordindex4], wx4, wy4);
   text(values[wordindex5], wx5, wy5);
   
-  //1,3,5 버튼
-  stroke(255);
-  fill(nc);
-  ellipse(t1, ty - 2, 60, 60);
-  ellipse(t3, ty - 2, 60, 60);
-  ellipse(t5, ty - 2, 60, 60);
-  //1,3,5 글씨
-  fill(255);
-  textSize(txtSize);
-  text("1", t1, ty);
-  text("3", t3, ty);
-  text("5", t5, ty);
+
 }
 
 function mousePressed() {
