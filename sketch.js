@@ -29,10 +29,10 @@ let d3 = 0;
 let d4 = 0;
 let d5 = 0;
 let txtSize = 30;
-let t1 = 380;
+let t1 = 380-100;
 let t3 = 480;
-let t5 = 580;
-let ty = 570;
+let t5 = 580+100;
+let ty = 800;
 let x = 100;
 let y = 300;
 let r = 150;
@@ -52,8 +52,8 @@ function preload() {
 
 function setup() {
   // frameRate(30);
-  canvas = createCanvas(960, 600);
-  canvas.position(500-50,100);
+  canvas = createCanvas(960, 960);
+  canvas.position(500 - 50, 200);
   for (let i = 0; i < 400; i++) {
     circles[i] = new Circle(
       random(width / 2 - circlewidth / 2, width / 2 + circlewidth / 2),
@@ -83,6 +83,11 @@ function draw() {
     circles[i].move();
   }
   image(img, 130, -50, 700, 700);
+  //가림막..
+  fill(255);
+  stroke(0);
+  //noStroke();
+  rect(480, 800, 700, 400);
   //제목
   strokeWeight(0);
   stroke(0);
@@ -105,7 +110,7 @@ function draw() {
   ellipse(width / 2, height / 2, circlewidth, circlewidth);
   //단어의 공
   strokeWeight(1);
-  
+
   fill(colors[0]);
   circle(wx1, wy1, d1);
   fill(colors[1]);
@@ -125,6 +130,7 @@ function draw() {
   text(values[wordindex3], wx3, wy3);
   text(values[wordindex4], wx4, wy4);
   text(values[wordindex5], wx5, wy5);
+  
   //1,3,5 버튼
   stroke(255);
   fill(nc);
@@ -238,8 +244,6 @@ class Circle {
     circle(this.x, this.y, 60);
     if (mousePressed) {
       this.ySpeed += 2;
-      
     }
-
   }
 }
