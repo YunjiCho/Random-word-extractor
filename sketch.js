@@ -53,7 +53,7 @@ function preload() {
 function setup() {
   // frameRate(30);
   canvas = createCanvas(960, 1260);
-  canvas.position(windowWidth/2-960/2,windowHeight/2-790/2);
+  canvas.position(windowWidth/2-960/2,windowHeight/2-1090/2);
 
   for (let i = 0; i < 400; i++) {
     circles[i] = new Circle(
