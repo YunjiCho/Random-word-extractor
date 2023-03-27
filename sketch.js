@@ -166,7 +166,7 @@ function mousePressed() {
     d5 = 0;
 
     wx3 = random(40, width - 40);
-    wy3 = random(100, height - 100);
+    wy3 = random(100, height - 200);
   }
 
   if (
@@ -187,11 +187,11 @@ function mousePressed() {
     d5 = 0;
 
     wx2 = random(40, width - 40);
-    wy2 = random(100, height - 100);
+    wy2 = random(100, height - 200);
     wx3 = random(40, width - 40);
-    wy3 = random(100, height - 100);
+    wy3 = random(100, height - 200);
     wx4 = random(40, width - 40);
-    wy4 = random(100, height - 100);
+    wy4 = random(100, height - 200);
     cl = 1;
   }
   if (
@@ -211,15 +211,15 @@ function mousePressed() {
     d4 = gong;
     d5 = gong;
     wx1 = random(40, width - 40);
-    wy1 = random(100, height - 100);
+    wy1 = random(100, height - 200);
     wx2 = random(40, width - 40);
-    wy2 = random(100, height - 100);
+    wy2 = random(100, height - 200);
     wx3 = random(40, width - 40);
-    wy3 = random(100, height - 100);
+    wy3 = random(100, height - 200);
     wx4 = random(40, width - 40);
-    wy4 = random(100, height - 100);
+    wy4 = random(100, height - 200);
     wx5 = random(40, width - 40);
-    wy5 = random(100, height - 100);
+    wy5 = random(100, height - 200);
   }
 }
 
