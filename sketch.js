@@ -88,7 +88,7 @@ function draw() {
   fill(255);
   stroke(0);
   //noStroke();
-  rect(480, 800+200, 700, 400);
+  rect(480, 1100, 700, 600);
   //제목
   strokeWeight(0);
   stroke(0);
