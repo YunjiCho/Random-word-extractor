@@ -32,7 +32,7 @@ let txtSize = 30;
 let t1 = 380-100;
 let t3 = 480;
 let t5 = 580+100;
-let ty = 800;
+let ty = 1000;
 let x = 100;
 let y = 300;
 let r = 150;
@@ -52,7 +52,7 @@ function preload() {
 
 function setup() {
   // frameRate(30);
-  canvas = createCanvas(960, 960);
+  canvas = createCanvas(960, 1260);
   canvas.position(windowWidth/2-960/2,windowHeight/2-860/2);
 
   for (let i = 0; i < 400; i++) {
@@ -97,7 +97,7 @@ function draw() {
  text(
     "국립국어연구원의 자주 쓰이는 한국어 낱말 5800을 바탕으로 만들어진",
     320+20,
-    66
+   66
   );
   textSize(40);
   strokeWeight(2);
