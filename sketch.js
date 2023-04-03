@@ -97,11 +97,11 @@ function draw() {
  text(
     "국립국어연구원의 자주 쓰이는 한국어 낱말 5800을 바탕으로 만들어진",
     320+20,
-   66
+   66+20
   );
   textSize(40);
   strokeWeight(2);
-  titles1 = text("랜덤 단어 추출기", 740+20, 60);
+  titles1 = text("랜덤 단어 추출기", 740+20, 60+20);
 
   //원의 선
   noFill();
@@ -244,8 +244,6 @@ class Circle {
     // strokeWeight(1);
     noStroke();
     circle(this.x, this.y, 60);
-    if (mousePressed) {
-      this.ySpeed += 2;
-    }
+    this.ySpeed += 2;
   }
 }
